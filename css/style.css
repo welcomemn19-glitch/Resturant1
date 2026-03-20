@@ -488,12 +488,12 @@ body {
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    object-fit: cover;
 }
 
 .image-1 {
     width: 280px;
     height: 380px;
-    object-fit: cover;
     left: 10%;
     bottom: 20%;
     z-index: 1;
@@ -502,7 +502,6 @@ body {
 .image-2 {
     width: 250px;
     height: 280px;
-    object-fit: cover;
     right: 15%;
     top: 15%;
     z-index: 2;
@@ -1166,20 +1165,27 @@ footer {
         max-width: 100%;
     }
     
-    .image-stack {
-        height: 500px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-        padding: 2rem;
+    /* Fix for images on mobile - make them stack nicely without cutting off */
+    .right-column {
+        min-height: auto;
+        padding: 2rem 1rem;
     }
     
-    .image-1, .image-2 {
+    .image-stack {
         position: relative;
-        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .stack-image {
+        position: relative;
+        width: 90%;
+        max-width: 280px;
         height: auto;
         margin: 0 auto;
     }
@@ -1187,11 +1193,13 @@ footer {
     .image-1 {
         left: 0;
         bottom: 0;
+        height: auto;
     }
     
     .image-2 {
         right: 0;
         top: 0;
+        height: auto;
     }
     
     .menu-with-image {
@@ -1218,6 +1226,7 @@ footer {
         text-align: center;
         transform: none;
         margin-top: 0.5rem;
+        white-space: normal;
     }
     
     .main-heading-container {
@@ -1314,6 +1323,14 @@ footer {
     .category-image img {
         height: 200px;
     }
+    
+    /* Additional mobile image fixes */
+    .stack-image {
+        width: 95%;
+        max-width: 260px;
+        height: auto;
+        object-fit: contain;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1375,5 +1392,17 @@ footer {
     
     .faq-grid summary {
         font-size: 1rem;
+    }
+    
+    /* Small screen image fixes */
+    .stack-image {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+    }
+    
+    .image-stack {
+        gap: 1rem;
+        padding: 0.5rem;
     }
 }
