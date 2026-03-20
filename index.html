@@ -2,37 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Ember & Olive - Modern Casual Dining</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Top Utility Bar -->
-    <div class="top-bar">
-        <div class="location">
-            <span class="icon">📍</span> 24 Central Avenue, Sandton, Johannesburg, South Africa
-        </div>
-        <div class="contact-info">
-            <span class="icon">📞</span> +27 11 111 1111
-            <span class="icon email-icon">✉️</span> info@emberandolive.co.za
-        </div>
-        <div class="social-icons">
-            <a href="#" aria-label="Facebook">📘</a>
-            <a href="#" aria-label="Twitter">🐦</a>
-            <a href="#" aria-label="Instagram">📷</a>
-        </div>
-    </div>
-
-    <!-- Main Navigation -->
+    <!-- Main Navigation with Hamburger Menu -->
     <nav class="main-nav">
         <div class="logo">E&O</div>
-        <ul class="nav-links">
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="About.html">ABOUT</a></li>
-            <li><a href="Menu.html">MENUS ⌄</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="menu.html">MENUS ⌄</a></li>
             <li><a href="#">SHOP</a></li>
-            <li><a href="Contact.html">CONTACT ⌄</a></li>
+            <li><a href="contact.html">CONTACT ⌄</a></li>
         </ul>
     </nav>
 
@@ -70,11 +59,16 @@
         </div>
     </section>
 
-    <!-- Weekly Specials Section (Bottom Banner Style) -->
+    <!-- Weekly Specials Section -->
     <section class="specials-banner">
         <div class="banner-content">
             <span class="banner-text">WEEKLY SPECIALS</span>
             <span class="badge">NEW</span>
+        </div>
+        <div class="specials-list">
+            <span class="special-item">Tuesday - Burger Night: R99</span>
+            <span class="special-item">Thursday - Pizza Night: R95</span>
+            <span class="special-item">Sunday - Family Lunch: R150</span>
         </div>
     </section>
 
@@ -118,7 +112,7 @@
             </div>
             <div class="footer-section">
                 <h3>Contact</h3>
-                <p>📞 +27 11 111 1111</p>
+                <p>📞 +27 11 678 4521</p>
                 <p>✉️ info@emberandolive.co.za</p>
             </div>
         </div>
@@ -126,5 +120,24 @@
             <p>&copy; 2024 Ember & Olive. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
