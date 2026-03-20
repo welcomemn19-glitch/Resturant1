@@ -65,6 +65,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
+    position: relative;
 }
 
 .logo {
@@ -72,6 +73,7 @@ body {
     font-size: 2.5rem;
     color: #fff;
     font-weight: normal;
+    flex: 0 0 auto;
 }
 
 .nav-links {
@@ -79,6 +81,14 @@ body {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0;
 }
 
 .nav-links a {
@@ -93,25 +103,6 @@ body {
 
 .nav-links a:hover {
     color: #d4af37;
-}
-
-.cta-btn {
-    background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s;
-    display: inline-block;
-}
-
-.cta-btn:hover {
-    background: #d4af37;
-    border-color: #d4af37;
-    color: #1a261c;
 }
 
 /* ===== HERO SECTIONS ===== */
