@@ -1,0 +1,22 @@
+# robots.txt for Ember & Olive Restaurant Website
+# Hosted on Vercel
+
+# Allow all search engines to crawl
+User-agent: *
+Allow: /
+
+# Disallow crawling of CSS and JS files (not needed for indexing)
+Disallow: /css/
+Disallow: /js/
+
+# Disallow crawling of image folders (alt text handles SEO)
+Disallow: /images/
+
+# Sitemap location - use your Vercel URL
+Sitemap: https://your-project-name.vercel.app/sitemap.xml
+
+# Crawl delay to be respectful to server resources
+Crawl-delay: 5
+
+# Specify the host (use your Vercel URL)
+Host: https://resturant11-nu.vercel.app

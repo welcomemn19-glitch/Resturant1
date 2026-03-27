@@ -3,22 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Ember & Olive - About Us</title>
+    
+    <!-- Primary SEO Tags -->
+    <title>About Ember & Olive | Modern Casual Dining Restaurant in Sandton, Johannesburg</title>
+    <meta name="description" content="Learn about Ember & Olive, a modern casual dining restaurant in Sandton, Johannesburg. Discover our philosophy of fresh ingredients, wood-fired cooking, and relaxed atmosphere.">
+    <meta name="keywords" content="about Ember and Olive, restaurant story Sandton, casual dining philosophy, wood-fired cooking Johannesburg, Mediterranean restaurant history">
+    <meta name="author" content="Ember & Olive">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://resturant11-nu.vercel.app/About.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://resturant11-nu.vercel.app/About.html">
+    <meta property="og:title" content="About Ember & Olive | Our Story & Philosophy">
+    <meta property="og:description" content="Discover the story behind Ember & Olive. Learn about our commitment to fresh ingredients, wood-fired cooking, and creating memorable dining experiences in Sandton.">
+    <meta property="og:image" content="https://resturant11-nu.vercel.app/images/AboutPic.jpg">
+    <meta property="og:site_name" content="Ember & Olive">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Ember & Olive | Our Story & Philosophy">
+    <meta name="twitter:description" content="Discover the story behind Ember & Olive. Fresh ingredients, wood-fired cooking, and memorable dining experiences in Sandton.">
+    <meta name="twitter:image" content="https://resturant11-nu.vercel.app/images/AboutPic.jpg">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="ZA-GP">
+    <meta name="geo.placename" content="Sandton, Johannesburg">
+    
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Main Navigation with Hamburger Menu -->
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Main navigation">
         <div class="logo">E&O</div>
-        <div class="hamburger" id="hamburger">
+        <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="About.html" aria-current="page">ABOUT</a></li>
             <li><a href="Menu.html">MENUS ⌄</a></li>
             <li><a href="#">SHOP</a></li>
             <li><a href="Contact.html">CONTACT ⌄</a></li>
@@ -26,42 +55,42 @@
     </nav>
 
     <!-- About Hero Section with AboutPic.jpg background -->
-    <section class="about-hero" style="background: linear-gradient(rgba(26, 38, 28, 0.7), rgba(26, 38, 28, 0.7)), url('images/AboutPic.jpg'); background-size: cover; background-position: center;">
+    <section class="about-hero" style="background: linear-gradient(rgba(26, 38, 28, 0.7), rgba(26, 38, 28, 0.7)), url('images/AboutPic.jpg'); background-size: cover; background-position: center;" aria-label="About hero section">
         <div class="hero-content">
             <h1>ABOUT EMBER & OLIVE</h1>
             <div class="hero-divider">
-                <span class="line"></span>
+                <span class="line" aria-hidden="true"></span>
                 <span class="divider-text">OUR STORY</span>
-                <span class="line"></span>
+                <span class="line" aria-hidden="true"></span>
             </div>
         </div>
     </section>
 
     <!-- Split Content Section for About -->
-    <section class="split-section reverse">
+    <section class="split-section reverse" aria-label="Our philosophy">
         <div class="left-column">
             <div class="left-content">
                 <div class="eyebrow">OUR PHILOSOPHY</div>
                 <div class="main-heading-container">
                     <h2 class="heading-come">FOOD FROM</h2>
-                    <span class="cursive-us">Heart</span>
+                    <span class="cursive-us" aria-label="Heart">Heart</span>
                 </div>
                 <h3 class="subheading">MADE WITH LOVE</h3>
                 <p class="description">Ember & Olive is a modern casual dining restaurant located in Johannesburg, South Africa. We serve a mix of international dishes inspired by Mediterranean, American, and contemporary global cuisine.</p>
                 <p class="description">We focus on fresh ingredients, wood-fired cooking, and a relaxed atmosphere perfect for families, friends, and business lunches.</p>
-                <a href="Menu.html" class="concept-link">VIEW OUR MENU</a>
+                <a href="Menu.html" class="concept-link" aria-label="View our menu">VIEW OUR MENU</a>
             </div>
         </div>
         <div class="right-column">
             <div class="image-stack">
-                <img src="images/Chicken and chips.jpg" alt="Crispy chicken and chips" class="stack-image image-1">
-                <img src="images/Desert.jpg" alt="Delicious dessert" class="stack-image image-2">
+                <img src="images/Chicken and chips.jpg" alt="Crispy chicken and chips served at Ember & Olive restaurant in Sandton" class="stack-image image-1" loading="lazy">
+                <img src="images/Desert.jpg" alt="Delicious dessert from Ember & Olive's menu, a sweet treat for any occasion" class="stack-image image-2" loading="lazy">
             </div>
         </div>
     </section>
 
     <!-- Events & Bookings Section -->
-    <section class="info-cards">
+    <section class="info-cards" aria-label="Events and services">
         <div class="card">
             <h3>Events & Bookings</h3>
             <p>We host birthday dinners, work functions, and small private events. Contact us for more information about hosting your next event with us.</p>
@@ -73,7 +102,7 @@
     </section>
 
     <!-- Customer Reviews Banner -->
-    <section class="reviews-banner">
+    <section class="reviews-banner" aria-label="Customer reviews">
         <div class="banner-content">
             <span class="banner-text">CUSTOMER REVIEWS</span>
             <div class="reviews">
@@ -88,6 +117,27 @@
             </div>
         </div>
     </section>
+
+    <!-- Schema.org Structured Data for About Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Ember & Olive",
+        "description": "Modern casual dining restaurant in Sandton, Johannesburg serving Mediterranean, American, and global cuisine.",
+        "mainEntity": {
+            "@type": "Restaurant",
+            "name": "Ember & Olive",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "24 Central Avenue",
+                "addressLocality": "Sandton",
+                "addressRegion": "Gauteng",
+                "addressCountry": "ZA"
+            }
+        }
+    }
+    </script>
 
     <footer>
         <div class="footer-content">
@@ -114,7 +164,6 @@
     </footer>
 
     <script>
-        // Hamburger Menu Toggle
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('nav-links');
 

@@ -3,15 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Ember & Olive - Contact Us</title>
+    
+    <!-- Primary SEO Tags -->
+    <title>Contact Us | Ember & Olive Restaurant in Sandton, Johannesburg</title>
+    <meta name="description" content="Contact Ember & Olive in Sandton, Johannesburg. Find our location, opening hours, phone number, email, and make reservations for a memorable dining experience.">
+    <meta name="keywords" content="contact Ember and Olive, restaurant Sandton phone, restaurant address Johannesburg, make reservation, Ember and Olive location, restaurant hours">
+    <meta name="author" content="Ember & Olive">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://resturant11-nu.vercel.app/Contact.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://resturant11-nu.vercel.app/Contact.html">
+    <meta property="og:title" content="Contact Us | Ember & Olive Restaurant">
+    <meta property="og:description" content="Get in touch with Ember & Olive. Find our location in Sandton, call us, or email for reservations and inquiries.">
+    <meta property="og:image" content="https://resturant11-nu.vercel.app/images/ContactPic.jpg">
+    <meta property="og:site_name" content="Ember & Olive">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us | Ember & Olive Restaurant">
+    <meta name="twitter:description" content="Get in touch with Ember & Olive. Find our location in Sandton, call us, or email for reservations.">
+    <meta name="twitter:image" content="https://resturant11-nu.vercel.app/images/ContactPic.jpg">
+    
+    <!-- Geo Tags for Local SEO -->
+    <meta name="geo.region" content="ZA-GP">
+    <meta name="geo.placename" content="Sandton, Johannesburg">
+    <meta name="geo.position" content="-26.1076;28.0567">
+    <meta name="ICBM" content="-26.1076, 28.0567">
+    
+    <!-- Business Contact Information -->
+    <meta name="business:contact_data:country_name" content="South Africa">
+    <meta name="business:contact_data:locality" content="Johannesburg">
+    <meta name="business:contact_data:region" content="Gauteng">
+    <meta name="business:contact_data:postal_code" content="2196">
+    <meta name="business:contact_data:phone_number" content="+27 11 678 4521">
+    <meta name="business:contact_data:email" content="info@emberandolive.co.za">
+    
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Main Navigation with Hamburger Menu -->
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Main navigation">
         <div class="logo">E&O</div>
-        <div class="hamburger" id="hamburger">
+        <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
             <span></span>
             <span></span>
             <span></span>
@@ -21,39 +59,43 @@
             <li><a href="About.html">ABOUT</a></li>
             <li><a href="Menu.html">MENUS ⌄</a></li>
             <li><a href="#">SHOP</a></li>
-            <li><a href="Contact.html">CONTACT ⌄</a></li>
+            <li><a href="Contact.html" aria-current="page">CONTACT ⌄</a></li>
         </ul>
     </nav>
 
     <!-- Contact Hero Section with ContactPic.jpg background -->
-    <section class="contact-hero" style="background: linear-gradient(rgba(26, 38, 28, 0.7), rgba(26, 38, 28, 0.7)), url('images/ContactPic.jpg'); background-size: cover; background-position: center;">
+    <section class="contact-hero" style="background: linear-gradient(rgba(26, 38, 28, 0.7), rgba(26, 38, 28, 0.7)), url('images/ContactPic.jpg'); background-size: cover; background-position: center;" aria-label="Contact hero section">
         <div class="hero-content">
             <h1>CONTACT US</h1>
             <div class="hero-divider">
-                <span class="line"></span>
+                <span class="line" aria-hidden="true"></span>
                 <span class="divider-text">VISIT US • CALL US • EMAIL US</span>
-                <span class="line"></span>
+                <span class="line" aria-hidden="true"></span>
             </div>
         </div>
     </section>
 
     <!-- Contact Cards Section -->
-    <section class="contact-cards">
-        <div class="contact-card">
+    <section class="contact-cards" aria-label="Contact information">
+        <div class="contact-card" itemscope itemtype="https://schema.org/Place">
             <div class="contact-icon">📍</div>
-            <h3>Visit Us</h3>
-            <p>24 Central Avenue<br>Sandton, Johannesburg<br>South Africa</p>
+            <h3 itemprop="name">Visit Us</h3>
+            <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAddress">24 Central Avenue</span><br>
+                <span itemprop="addressLocality">Sandton, Johannesburg</span><br>
+                <span itemprop="addressCountry">South Africa</span>
+            </p>
         </div>
         <div class="contact-card">
             <div class="contact-icon">📞</div>
             <h3>Call Us</h3>
-            <p><a href="tel:+27116784521">+27 11 678 4521</a></p>
+            <p><a href="tel:+27116784521" itemprop="telephone">+27 11 678 4521</a></p>
             <p class="small">Available during business hours</p>
         </div>
         <div class="contact-card">
             <div class="contact-icon">✉️</div>
             <h3>Email Us</h3>
-            <p><a href="mailto:info@emberandolive.co.za">info@emberandolive.co.za</a></p>
+            <p><a href="mailto:info@emberandolive.co.za" itemprop="email">info@emberandolive.co.za</a></p>
             <p class="small">We'll respond within 24-48 hours</p>
         </div>
         <div class="contact-card">
@@ -66,18 +108,18 @@
     </section>
 
     <!-- Map Section -->
-    <section class="contact-info-section">
+    <section class="contact-info-section" aria-label="Location map">
         <div class="map-container">
             <h3>Find Us</h3>
             <div class="map-placeholder">
                 <p>📍 24 Central Avenue, Sandton, Johannesburg</p>
-                <img src="images/Cold drink in glass.jpg" alt="Refreshing drink" class="map-drink-image">
+                <img src="images/Cold drink in glass.jpg" alt="Refreshing cold drink served at Ember & Olive restaurant" class="map-drink-image" loading="lazy">
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section class="faq-section" aria-label="Frequently asked questions">
         <h2>Frequently Asked Questions</h2>
         <div class="faq-grid">
             <details>
@@ -98,6 +140,52 @@
             </details>
         </div>
     </section>
+
+    <!-- Schema.org Structured Data for Contact Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Ember & Olive",
+        "image": "https://www.emberandolive.co.za/images/ContactPic.jpg",
+        "telephone": "+27 11 678 4521",
+        "email": "info@emberandolive.co.za",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "24 Central Avenue",
+            "addressLocality": "Sandton",
+            "addressRegion": "Gauteng",
+            "addressCountry": "ZA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-26.1076",
+            "longitude": "28.0567"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                "opens": "11:00",
+                "closes": "22:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Friday", "Saturday"],
+                "opens": "11:00",
+                "closes": "23:30"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Sunday"],
+                "opens": "11:00",
+                "closes": "21:00"
+            }
+        ],
+        "priceRange": "R55 - R245",
+        "servesCuisine": ["Mediterranean", "American", "Global Contemporary"]
+    }
+    </script>
 
     <footer>
         <div class="footer-content">
@@ -124,7 +212,6 @@
     </footer>
 
     <script>
-        // Hamburger Menu Toggle
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('nav-links');
 

@@ -3,15 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Ember & Olive - Menu</title>
+    
+    <!-- Primary SEO Tags -->
+    <title>Menu | Ember & Olive Restaurant in Sandton, Johannesburg</title>
+    <meta name="description" content="Explore the menu at Ember & Olive in Sandton. Enjoy wood-fired pizzas, grilled steaks, fresh pasta, and delicious desserts. View our full menu with prices.">
+    <meta name="keywords" content="restaurant menu Sandton, wood-fired pizza menu, steak restaurant Johannesburg, pasta dishes, dessert menu, kids menu, Ember and Olive menu">
+    <meta name="author" content="Ember & Olive">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://resturant11-nu.vercel.app/Menu.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://resturant11-nu.vercel.app/Menu.html">
+    <meta property="og:title" content="Menu | Ember & Olive Restaurant">
+    <meta property="og:description" content="Explore our delicious menu featuring wood-fired pizzas, grilled steaks, fresh pasta, and decadent desserts. Dine in or takeaway.">
+    <meta property="og:image" content="https://resturant11-nu.vercel.app/images/MenuPic.jpg">
+    <meta property="og:site_name" content="Ember & Olive">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Menu | Ember & Olive Restaurant">
+    <meta name="twitter:description" content="Explore our delicious menu featuring wood-fired pizzas, grilled steaks, fresh pasta, and decadent desserts.">
+    <meta name="twitter:image" content="https://resturant11-nu.vercel.app/images/MenuPic.jpg">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="ZA-GP">
+    <meta name="geo.placename" content="Sandton, Johannesburg">
+    
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Main Navigation with Hamburger Menu -->
-    <nav class="main-nav">
+    <nav class="main-nav" aria-label="Main navigation">
         <div class="logo">E&O</div>
-        <div class="hamburger" id="hamburger">
+        <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
             <span></span>
             <span></span>
             <span></span>
@@ -19,178 +47,178 @@
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">HOME</a></li>
             <li><a href="About.html">ABOUT</a></li>
-            <li><a href="Menu.html">MENUS ⌄</a></li>
+            <li><a href="Menu.html" aria-current="page">MENUS ⌄</a></li>
             <li><a href="#">SHOP</a></li>
             <li><a href="Contact.html">CONTACT ⌄</a></li>
         </ul>
     </nav>
 
     <!-- Menu Hero Section with MenuPic.jpg background -->
-    <section class="menu-hero" style="background: linear-gradient(rgba(26, 38, 28, 0.7), rgba(26, 38, 28, 0.7)), url('images/MenuPic.jpg'); background-size: cover; background-position: center;">
+    <section class="menu-hero" style="background: linear-gradient(rgba(26, 38, 28, 0.7), rgba(26, 38, 28, 0.7)), url('images/MenuPic.jpg'); background-size: cover; background-position: center;" aria-label="Menu hero section">
         <div class="hero-content">
             <h1>OUR MENU</h1>
             <div class="hero-divider">
-                <span class="line"></span>
+                <span class="line" aria-hidden="true"></span>
                 <span class="divider-text">FRESH INGREDIENTS • WOOD-FIRED COOKING</span>
-                <span class="line"></span>
+                <span class="line" aria-hidden="true"></span>
             </div>
         </div>
     </section>
 
     <!-- Menu Sections -->
-    <section class="menu-sections">
+    <section class="menu-sections" aria-label="Restaurant menu">
         <!-- Starters -->
-        <div class="menu-category">
-            <h2>Starters</h2>
+        <div class="menu-category" itemscope itemtype="https://schema.org/ItemList">
+            <h2 itemprop="name">Starters</h2>
             <div class="menu-items-grid">
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Garlic & Herb Bread</h3>
-                        <span class="price">R55</span>
+                        <h3 itemprop="name">Garlic & Herb Bread</h3>
+                        <span class="price" itemprop="price" content="55">R55</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Crispy Calamari</h3>
-                        <span class="price">R95</span>
+                        <h3 itemprop="name">Crispy Calamari</h3>
+                        <span class="price" itemprop="price" content="95">R95</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Chicken Wings (6 pieces)</h3>
-                        <span class="price">R105</span>
+                        <h3 itemprop="name">Chicken Wings (6 pieces)</h3>
+                        <span class="price" itemprop="price" content="105">R105</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Tomato & Mozzarella Salad</h3>
-                        <span class="price">R90</span>
+                        <h3 itemprop="name">Tomato & Mozzarella Salad</h3>
+                        <span class="price" itemprop="price" content="90">R90</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Loaded Nachos</h3>
-                        <span class="price">R110</span>
+                        <h3 itemprop="name">Loaded Nachos</h3>
+                        <span class="price" itemprop="price" content="110">R110</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Main Courses with Image -->
-        <div class="menu-category">
-            <h2>Main Courses</h2>
+        <!-- Main Courses -->
+        <div class="menu-category" itemscope itemtype="https://schema.org/ItemList">
+            <h2 itemprop="name">Main Courses</h2>
             <div class="menu-with-image">
                 <div class="menu-items-grid">
-                    <div class="menu-item-card">
+                    <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                         <div class="item-info">
-                            <h3>Grilled Ribeye Steak (300g)</h3>
-                            <span class="price">R245</span>
+                            <h3 itemprop="name">Grilled Ribeye Steak (300g)</h3>
+                            <span class="price" itemprop="price" content="245">R245</span>
                         </div>
                     </div>
-                    <div class="menu-item-card">
+                    <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                         <div class="item-info">
-                            <h3>Wood-Fired Margherita Pizza</h3>
-                            <span class="price">R135</span>
+                            <h3 itemprop="name">Wood-Fired Margherita Pizza</h3>
+                            <span class="price" itemprop="price" content="135">R135</span>
                         </div>
                     </div>
-                    <div class="menu-item-card">
+                    <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                         <div class="item-info">
-                            <h3>BBQ Chicken Burger & Fries</h3>
-                            <span class="price">R125</span>
+                            <h3 itemprop="name">BBQ Chicken Burger & Fries</h3>
+                            <span class="price" itemprop="price" content="125">R125</span>
                         </div>
                     </div>
-                    <div class="menu-item-card">
+                    <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                         <div class="item-info">
-                            <h3>Creamy Chicken Pasta</h3>
-                            <span class="price">R145</span>
+                            <h3 itemprop="name">Creamy Chicken Pasta</h3>
+                            <span class="price" itemprop="price" content="145">R145</span>
                         </div>
                     </div>
-                    <div class="menu-item-card">
+                    <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                         <div class="item-info">
-                            <h3>Grilled Salmon</h3> 
-                            <span class="price">R210</span>
+                            <h3 itemprop="name">Grilled Salmon</h3> 
+                            <span class="price" itemprop="price" content="210">R210</span>
                         </div>
                     </div>
-                    <div class="menu-item-card">
+                    <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                         <div class="item-info">
-                            <h3>Vegetarian Buddha Bowl</h3>
-                            <span class="price">R120</span>
+                            <h3 itemprop="name">Vegetarian Buddha Bowl</h3>
+                            <span class="price" itemprop="price" content="120">R120</span>
                         </div>
                     </div>
                 </div>
                 <div class="category-image">
-                    <img src="images/Vegetarian Buddha Bowl.jpg" alt="Vegetarian Buddha in a bowl">
+                    <img src="images/Vegetarian Buddha Bowl.jpg" alt="Healthy Vegetarian Buddha Bowl with fresh vegetables and grains from Ember & Olive menu" loading="lazy">
                 </div>
             </div>
         </div>
 
         <!-- Kids Menu -->
-        <div class="menu-category">
-            <h2>Kids Menu</h2>
+        <div class="menu-category" itemscope itemtype="https://schema.org/ItemList">
+            <h2 itemprop="name">Kids Menu</h2>
             <div class="menu-items-grid">
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Kids Chicken Strips & Fries</h3>
-                        <span class="price">R65</span>
+                        <h3 itemprop="name">Kids Chicken Strips & Fries</h3>
+                        <span class="price" itemprop="price" content="65">R65</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Mini Cheeseburger & Fries</h3>
-                        <span class="price">R70</span>
+                        <h3 itemprop="name">Mini Cheeseburger & Fries</h3>
+                        <span class="price" itemprop="price" content="70">R70</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Kids Pizza</h3>
-                        <span class="price">R68</span>
+                        <h3 itemprop="name">Kids Pizza</h3>
+                        <span class="price" itemprop="price" content="68">R68</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Kids Ice Cream</h3>
-                        <span class="price">R30</span>
+                        <h3 itemprop="name">Kids Ice Cream</h3>
+                        <span class="price" itemprop="price" content="30">R30</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Desserts with Image -->
-        <div class="menu-category">
-            <h2>Desserts</h2>
+        <!-- Desserts -->
+        <div class="menu-category" itemscope itemtype="https://schema.org/ItemList">
+            <h2 itemprop="name">Desserts</h2>
             <div class="menu-with-image reverse">
                 <div class="category-image">
-                    <img src="images/Desert.jpg" alt="Delicious desserts">
+                    <img src="images/Desert.jpg" alt="Delicious desserts including chocolate lava cake and cheesecake from Ember & Olive menu" loading="lazy">
                 </div>
                 <div class="menu-items-grid">
-                    <div class="menu-item-card">
+                    <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                         <div class="item-info">
-                            <h3>Chocolate Lava Cake</h3>
-                            <span class="price">R75</span>
+                            <h3 itemprop="name">Chocolate Lava Cake</h3>
+                            <span class="price" itemprop="price" content="75">R75</span>
                         </div>
                     </div>
-                    <div class="menu-item-card">
+                    <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                         <div class="item-info">
-                            <h3>New York Cheesecake</h3>
-                            <span class="price">R78</span>
+                            <h3 itemprop="name">New York Cheesecake</h3>
+                            <span class="price" itemprop="price" content="78">R78</span>
                         </div>
                     </div>
-                    <div class="menu-item-card">
+                    <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                         <div class="item-info">
-                            <h3>Ice Cream Bowl</h3>
-                            <span class="price">R55</span>
+                            <h3 itemprop="name">Ice Cream Bowl</h3>
+                            <span class="price" itemprop="price" content="55">R55</span>
                         </div>
                     </div>
-                    <div class="menu-item-card">
+                    <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                         <div class="item-info">
-                            <h3>Tiramisu</h3>
-                            <span class="price">R80</span>
+                            <h3 itemprop="name">Tiramisu</h3>
+                            <span class="price" itemprop="price" content="80">R80</span>
                         </div>
                     </div>
-                    <div class="menu-item-card">
+                    <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                         <div class="item-info">
-                            <h3>Caramel Brownie Sundae</h3>
-                            <span class="price">R85</span>
+                            <h3 itemprop="name">Caramel Brownie Sundae</h3>
+                            <span class="price" itemprop="price" content="85">R85</span>
                         </div>
                     </div>
                 </div>
@@ -198,80 +226,80 @@
         </div>
 
         <!-- Cold Drinks -->
-        <div class="menu-category">
-            <h2>Cold Drinks</h2>
+        <div class="menu-category" itemscope itemtype="https://schema.org/ItemList">
+            <h2 itemprop="name">Cold Drinks</h2>
             <div class="menu-items-grid">
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Soft Drinks (Coke, Sprite, Fanta)</h3>
-                        <span class="price">R32</span>
+                        <h3 itemprop="name">Soft Drinks (Coke, Sprite, Fanta)</h3>
+                        <span class="price" itemprop="price" content="32">R32</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Fresh Juice</h3>
-                        <span class="price">R45</span>
+                        <h3 itemprop="name">Fresh Juice</h3>
+                        <span class="price" itemprop="price" content="45">R45</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Sparkling / Still Water (500ml)</h3>
-                        <span class="price">R28</span>
+                        <h3 itemprop="name">Sparkling / Still Water (500ml)</h3>
+                        <span class="price" itemprop="price" content="28">R28</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Milkshakes</h3>
-                        <span class="price">R48</span>
+                        <h3 itemprop="name">Milkshakes</h3>
+                        <span class="price" itemprop="price" content="48">R48</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Iced Coffee</h3>
-                        <span class="price">R42</span>
+                        <h3 itemprop="name">Iced Coffee</h3>
+                        <span class="price" itemprop="price" content="42">R42</span>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Hot Drinks -->
-        <div class="menu-category">
-            <h2>Hot Drinks</h2>
+        <div class="menu-category" itemscope itemtype="https://schema.org/ItemList">
+            <h2 itemprop="name">Hot Drinks</h2>
             <div class="menu-items-grid">
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Americano</h3>
-                        <span class="price">R30</span>
+                        <h3 itemprop="name">Americano</h3>
+                        <span class="price" itemprop="price" content="30">R30</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Cappuccino</h3>
-                        <span class="price">R36</span>
+                        <h3 itemprop="name">Cappuccino</h3>
+                        <span class="price" itemprop="price" content="36">R36</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Latte</h3>
-                        <span class="price">R38</span>
+                        <h3 itemprop="name">Latte</h3>
+                        <span class="price" itemprop="price" content="38">R38</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Espresso</h3>
-                        <span class="price">R26</span>
+                        <h3 itemprop="name">Espresso</h3>
+                        <span class="price" itemprop="price" content="26">R26</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Rooibos / Tea</h3>
-                        <span class="price">R24</span>
+                        <h3 itemprop="name">Rooibos / Tea</h3>
+                        <span class="price" itemprop="price" content="24">R24</span>
                     </div>
                 </div>
-                <div class="menu-item-card">
+                <div class="menu-item-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/MenuItem">
                     <div class="item-info">
-                        <h3>Hot Chocolate</h3>
-                        <span class="price">R40</span>
+                        <h3 itemprop="name">Hot Chocolate</h3>
+                        <span class="price" itemprop="price" content="40">R40</span>
                     </div>
                 </div>
             </div>
@@ -279,7 +307,7 @@
     </section>
 
     <!-- Weekly Specials Banner -->
-    <section class="specials-banner">
+    <section class="specials-banner" aria-label="Weekly specials">
         <div class="banner-content">
             <span class="banner-text">WEEKLY SPECIALS</span>
             <div class="specials-list">
@@ -287,9 +315,39 @@
                 <span class="special-item">Thursday - Pizza Night: R95</span>
                 <span class="special-item">Sunday - Family Lunch: R150</span>
             </div>
-            <span class="badge">NEW</span>
+            <span class="badge" aria-label="New specials available">NEW</span>
         </div>
     </section>
+
+    <!-- Schema.org Structured Data for Menu Page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        "name": "Ember & Olive Menu",
+        "description": "Modern casual dining menu featuring Mediterranean and American cuisine",
+        "hasMenuItem": [
+            {
+                "@type": "MenuItem",
+                "name": "Grilled Ribeye Steak",
+                "price": "245",
+                "priceCurrency": "ZAR"
+            },
+            {
+                "@type": "MenuItem",
+                "name": "Wood-Fired Margherita Pizza",
+                "price": "135",
+                "priceCurrency": "ZAR"
+            },
+            {
+                "@type": "MenuItem",
+                "name": "BBQ Chicken Burger",
+                "price": "125",
+                "priceCurrency": "ZAR"
+            }
+        ]
+    }
+    </script>
 
     <footer>
         <div class="footer-content">
@@ -316,7 +374,6 @@
     </footer>
 
     <script>
-        // Hamburger Menu Toggle
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('nav-links');
 

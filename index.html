@@ -3,21 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Ember & Olive - Modern Casual Dining</title>
+    
+    <!-- Primary SEO Tags -->
+    <title>Ember & Olive | Modern Casual Dining Restaurant in Sandton, Johannesburg</title>
+    <meta name="description" content="Ember & Olive is a modern casual dining restaurant in Sandton, Johannesburg. Serving Mediterranean, American, and global cuisine with wood-fired cooking. Visit us for lunch or dinner!">
+    <meta name="keywords" content="restaurant Sandton, casual dining Johannesburg, Mediterranean food, wood-fired pizza, burger night, family restaurant, Ember and Olive, best restaurant Sandton, dining in Johannesburg">
+    <meta name="author" content="Ember & Olive">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://resturant11-nu.vercel.app/index.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://resturant11-nu.vercel.app/">
+    <meta property="og:title" content="Ember & Olive | Modern Casual Dining Restaurant in Sandton">
+    <meta property="og:description" content="Experience authentic Mediterranean and global cuisine at Ember & Olive in Sandton. Wood-fired cooking, fresh ingredients, and a relaxed atmosphere perfect for families and friends.">
+    <meta property="og:image" content="https://resturant11-nu.vercel.app/images/og-image.jpg">
+    <meta property="og:site_name" content="Ember & Olive">
+    <meta property="og:locale" content="en_ZA">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://resturant11-nu.vercel.app/">
+    <meta name="twitter:title" content="Ember & Olive | Modern Casual Dining Restaurant">
+    <meta name="twitter:description" content="Experience authentic Mediterranean and global cuisine at Ember & Olive in Sandton. Wood-fired cooking, fresh ingredients, and a relaxed atmosphere.">
+    <meta name="twitter:image" content="https://resturant11-nu.vercel.app/images/twitter-image.jpg">
+    
+    <!-- Geo Tags for Local SEO -->
+    <meta name="geo.region" content="ZA-GP">
+    <meta name="geo.placename" content="Sandton, Johannesburg">
+    <meta name="geo.position" content="-26.1076;28.0567">
+    <meta name="ICBM" content="-26.1076, 28.0567">
+    
+    <!-- Business Information -->
+    <meta name="business:contact_data:country_name" content="South Africa">
+    <meta name="business:contact_data:locality" content="Johannesburg">
+    <meta name="business:contact_data:region" content="Gauteng">
+    <meta name="business:contact_data:postal_code" content="2196">
+    <meta name="business:contact_data:phone_number" content="+27 11 678 4521">
+    
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Main Navigation with Hamburger Menu -->
-    <nav class="main-nav">
-        <div class="logo">E&O</div>
-        <div class="hamburger" id="hamburger">
+    <nav class="main-nav" aria-label="Main navigation">
+        <div class="logo" aria-label="Ember & Olive logo">E&O</div>
+        <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">HOME</a></li>
+        <ul class="nav-links" id="nav-links" role="navigation">
+            <li><a href="index.html" aria-current="page">HOME</a></li>
             <li><a href="About.html">ABOUT</a></li>
             <li><a href="Menu.html">MENUS ⌄</a></li>
             <li><a href="#">SHOP</a></li>
@@ -26,44 +67,44 @@
     </nav>
 
     <!-- Hero Section with HomePic.jpg background -->
-    <section class="hero" style="background: linear-gradient(rgba(26, 38, 28, 0.7), rgba(26, 38, 28, 0.7)), url('images/HomePic.jpg'); background-size: cover; background-position: center;">
+    <section class="hero" style="background: linear-gradient(rgba(26, 38, 28, 0.7), rgba(26, 38, 28, 0.7)), url('images/HomePic.jpg'); background-size: cover; background-position: center;" aria-label="Hero section">
         <div class="hero-content">
             <h1>FOOD FROM HEART.<br>MADE WITH LOVE.</h1>
             <div class="hero-divider">
-                <span class="line"></span>
+                <span class="line" aria-hidden="true"></span>
                 <span class="divider-text">ENJOY EACH BITE</span>
-                <span class="line"></span>
+                <span class="line" aria-hidden="true"></span>
             </div>
         </div>
     </section>
 
     <!-- Split Content Section -->
-    <section class="split-section">
+    <section class="split-section" aria-label="Welcome section">
         <div class="left-column">
             <div class="left-content">
                 <div class="eyebrow">WELCOME TO EMBER & OLIVE</div>
                 <div class="main-heading-container">
                     <h2 class="heading-come">COME & MEET</h2>
-                    <span class="cursive-us">Us</span>
+                    <span class="cursive-us" aria-label="Us">Us</span>
                 </div>
                 <h3 class="subheading">AT EMBER & OLIVE</h3>
                 <p class="description">Ember & Olive is a modern casual dining restaurant located in Johannesburg, South Africa. We serve a mix of international dishes inspired by Mediterranean, American, and contemporary global cuisine. We focus on fresh ingredients, wood-fired cooking, and a relaxed atmosphere perfect for families, friends, and business lunches.</p>
-                <a href="About.html" class="concept-link">DISCOVER OUR CONCEPT</a>
+                <a href="About.html" class="concept-link" aria-label="Discover our concept">DISCOVER OUR CONCEPT</a>
             </div>
         </div>
         <div class="right-column">
             <div class="image-stack">
-                <img src="images/Pizza bread.jpg" alt="Wood-fired pizza bread" class="stack-image image-1">
-                <img src="images/Chicken with chips.jpg" alt="Grilled chicken with chips" class="stack-image image-2">
+                <img src="images/Pizza bread.jpg" alt="Freshly baked wood-fired pizza bread with garlic and herbs served at Ember & Olive" class="stack-image image-1" loading="lazy">
+                <img src="images/Chicken with chips.jpg" alt="Crispy fried chicken served with golden chips and dipping sauce at Ember & Olive restaurant" class="stack-image image-2" loading="lazy">
             </div>
         </div>
     </section>
 
     <!-- Weekly Specials Section -->
-    <section class="specials-banner">
+    <section class="specials-banner" aria-label="Weekly specials">
         <div class="banner-content">
             <span class="banner-text">WEEKLY SPECIALS</span>
-            <span class="badge">NEW</span>
+            <span class="badge" aria-label="New specials available">NEW</span>
         </div>
         <div class="specials-list">
             <span class="special-item">Tuesday - Burger Night: R99</span>
@@ -73,29 +114,71 @@
     </section>
 
     <!-- Featured Menu Items -->
-    <section class="featured-menu">
+    <section class="featured-menu" aria-label="Signature dishes">
         <h2>OUR SIGNATURE DISHES</h2>
         <div class="featured-grid">
-            <div class="featured-card">
-                <img src="images/Burger and chips.jpg" alt="BBQ Chicken Burger">
-                <h3>BBQ Chicken Burger</h3>
-                <p>With crispy fries</p>
-                <span class="price">R125</span>
-            </div>
-            <div class="featured-card">
-                <img src="images/Pizza.jpg" alt="Wood-Fired Margherita Pizza">
-                <h3>Wood-Fired Pizza</h3>
-                <p>Classic Margherita</p>
-                <span class="price">R135</span>
-            </div>
-            <div class="featured-card">
-                <img src="images/Grilled Ribeye Steak.jpg" alt="Grilled Ribeye Steak">
-                <h3>Grilled Ribeye</h3>
-                <p>300g with sides</p>
-                <span class="price">R245</span>
-            </div>
+            <article class="featured-card" itemscope itemtype="https://schema.org/MenuItem">
+                <img src="images/Burger and chips.jpg" alt="BBQ Chicken Burger with crispy fries and fresh lettuce at Ember & Olive" loading="lazy" itemprop="image">
+                <h3 itemprop="name">BBQ Chicken Burger</h3>
+                <p itemprop="description">With crispy fries</p>
+                <span class="price" itemprop="price" content="125">R125</span>
+            </article>
+            <article class="featured-card" itemscope itemtype="https://schema.org/MenuItem">
+                <img src="images/Pizza.jpg" alt="Wood-Fired Margherita Pizza with fresh basil and mozzarella from our wood-fired oven" loading="lazy" itemprop="image">
+                <h3 itemprop="name">Wood-Fired Pizza</h3>
+                <p itemprop="description">Classic Margherita</p>
+                <span class="price" itemprop="price" content="135">R135</span>
+            </article>
+            <article class="featured-card" itemscope itemtype="https://schema.org/MenuItem">
+                <img src="images/Grilled Ribeye Steak.jpg" alt="Grilled Ribeye Steak with roasted vegetables and sauce, a signature dish at Ember & Olive" loading="lazy" itemprop="image">
+                <h3 itemprop="name">Grilled Ribeye</h3>
+                <p itemprop="description">300g with sides</p>
+                <span class="price" itemprop="price" content="245">R245</span>
+            </article>
         </div>
     </section>
+
+    <!-- Schema.org Structured Data for Restaurant -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Ember & Olive",
+        "image": "https://www.emberandolive.co.za/images/HomePic.jpg",
+        "description": "Modern casual dining restaurant in Sandton, Johannesburg serving Mediterranean, American, and global cuisine with wood-fired cooking.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "24 Central Avenue",
+            "addressLocality": "Sandton",
+            "addressRegion": "Gauteng",
+            "addressCountry": "ZA",
+            "postalCode": "2196"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-26.1076",
+            "longitude": "28.0567"
+        },
+        "url": "https://www.emberandolive.co.za",
+        "telephone": "+27 11 678 4521",
+        "email": "info@emberandolive.co.za",
+        "priceRange": "R55 - R245",
+        "servesCuisine": ["Mediterranean", "American", "Global Contemporary"],
+        "openingHours": [
+            "Mo-Th 11:00-22:00",
+            "Fr-Sa 11:00-23:30",
+            "Su 11:00-21:00"
+        ],
+        "acceptsReservations": "Yes",
+        "hasMenu": "https://www.emberandolive.co.za/Menu.html",
+        "menu": "https://www.emberandolive.co.za/Menu.html",
+        "sameAs": [
+            "https://www.facebook.com/emberandolive",
+            "https://www.instagram.com/emberandolive",
+            "https://www.twitter.com/emberandolive"
+        ]
+    }
+    </script>
 
     <footer>
         <div class="footer-content">
