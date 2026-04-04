@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
         <loc>https://resturant11-nu.vercel.app/index.html</loc>
         <lastmod>2026-04-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <image:image>
-            <image:loc>https://resturant11-nu.vercel.app/images/HomePic.jpg</image:loc>
-            <image:title>Ember and Olive Restaurant</image:title>
-        </image:image>
     </url>
     
     <url>
@@ -18,10 +13,6 @@
         <lastmod>2026-04-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <image:image>
-            <image:loc>https://resturant11-nu.vercel.app/images/AboutPic.jpg</image:loc>
-            <image:title>About Ember and Olive Restaurant</image:title>
-        </image:image>
     </url>
     
     <url>
@@ -29,10 +20,6 @@
         <lastmod>2026-04-04</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
-        <image:image>
-            <image:loc>https://resturant11-nu.vercel.app/images/MenuPic.jpg</image:loc>
-            <image:title>Ember and Olive Menu</image:title>
-        </image:image>
     </url>
     
     <url>
@@ -40,10 +27,6 @@
         <lastmod>2026-04-04</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <image:image>
-            <image:loc>https://resturant11-nu.vercel.app/images/ContactPic.jpg</image:loc>
-            <image:title>Contact Ember and Olive</image:title>
-        </image:image>
     </url>
     
 </urlset>
